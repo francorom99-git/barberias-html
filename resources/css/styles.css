@@ -1,0 +1,243 @@
+:root {
+    --primario: #171717;
+    --secunadrio: #deedcd;
+    --terciario: rgb(242, 242, 242);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h2 {
+    color: var(--terciario);
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+h3 {
+    color: var(--primario);
+    font-size: 1.3rem;
+}
+
+body {
+    background-color: var(--primario);
+}
+header ul li {
+    list-style: none;
+}
+header img {
+    width: 70px;
+}
+header {
+    background-color: var(--primario);
+}
+
+article {
+    background-color: var(--terciario);
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--terciario);
+}
+section {
+    margin: 1rem;
+}
+article figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#nav-categorias {
+    background-color: var(--primario);
+    padding: 12px;
+}
+#nav-categorias ul {
+    list-style: none;
+}
+#nav-categorias ul li a {
+    border-radius: 1rem;
+    padding: 12px;
+    color: rgb(202, 202, 202);
+}
+#nav-categorias ul li a:hover {
+    background-color: #272727;
+    color: var(--terciario);
+    transition: .3s ease;
+}
+.nav-header a {
+    color: rgb(202, 202, 202);
+}
+.nav-header a:hover {
+    color: white;
+    transition: .3s ease;
+}
+button {
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  padding: 10px 15px;
+  border-radius: 100px;
+  background: transparent;
+  border: 2px solid var(--primario);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--primario);
+  font-family: "DM Sans", sans-serif;
+}
+
+button:hover {
+  color: var(--secunadrio);
+  background: var(--primario);
+  transition: all 0.6s ease;
+}
+button > i {
+    width: 34px;
+    margin-left: 2px;
+    transition: transform 0.3s ease-in-out;
+    color: var(--primario);
+  }
+  
+  button:hover i {
+    transform: translateX(5px);
+    color: var(--secunadrio);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+
+  #cortes-galano .row.py-3 {
+    height: 100%;
+  }
+  .text-success {
+    --bs-text-opacity: 1;
+    color: rgb(78, 217, 78)!important;
+  }
+  #btnVolver {
+    background-color: #272727;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 50vh;
+  }
+  @media (min-width: 992px){
+    iframe {
+        height: 100vh;
+    }
+  }
+  .table {
+    --bs-table-bg: transparent;
+    --bs-table-border-color: transparent;
+  }
+  .btnReservar { 
+    cursor: pointer;
+    width: 120px;
+    font-weight: 500;
+    transition: all 0.2s;
+    padding: 10px 15px;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid var(--primario);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--primario);
+    font-family: "DM Sans", sans-serif;
+  }
+  .btnReservar:hover {
+    color: var(--secunadrio);
+    background: var(--primario);
+    transition: all 0.6s ease;
+  }
+  .btnReservar > i {
+      width: 34px;
+      margin-left: 2px;
+      transition: transform 0.3s ease-in-out;
+      color: var(--primario);
+    }
+    
+    .btnReservar:hover i {
+      transform: translateX(5px);
+      color: var(--secunadrio);
+    }
+    
+    .btnReservar:active {
+      transform: scale(0.95);
+    }
+    .horarios article > div {
+        border-bottom: .8px solid rgb(163, 163, 163);
+        margin: 1rem 0;
+    }
+    .horarios article i{
+        font-size: 1.5rem;
+    }
+.ri-circle-fill, .ri-arrow-right-line {
+    font-size: 16px!important;
+}
+.reserva {
+    border-bottom: none!important;
+}
+section ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    float:left;
+}
+section ul li::before {
+content: '\F0BF';
+font-family: RemixIcon;
+}
+.img-servicio {
+  border-radius: 10px;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.btnReservar-b { 
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  transition: all 0.2s;
+  padding: 10px 15px;
+  border-radius: 100px;
+  background: transparent;
+  border: 2px solid var(--terciario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--terciario);
+  font-family: "DM Sans", sans-serif;
+}
+.btnReservar-b:hover {
+  color: var(--secunadrio);
+  transition: all 0.6s ease;
+}
+.btnReservar-b > i {
+  width: 34px;
+  margin-left: 2px;
+  transition: transform 0.3s ease-in-out;
+  color: var(--terciario);
+}
+
+.btnReservar-b:hover i {
+  transform: translateX(5px);
+  color: var(--secunadrio);
+}
+
+.btnReservar-b:active {
+  transform: scale(0.95);
+}
